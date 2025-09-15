@@ -80,3 +80,26 @@ input[type="text"] {
     height: auto; 
     margin-bottom: 0px; 
 }
+
+/* Estilos para o botão de conversão */
+#converter-btn {
+    display: block; /* Faz o botão ocupar a largura disponível */
+    width: 100%;
+    padding: 12px;
+    margin-top: 25px; 
+    font-size: 1rem; 
+    font-weight: bold; 
+    color: #fff; 
+    background-color: #1d3557; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+/* Efeito ao passar o mouse por cima do botão (hover) */
+#converter-btn:hover {
+    background-color: #0056b3; /* Um tom de azul mais escuro */
+    transform: translateY(-2px); /* Eleva o botão sutilmente */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Adiciona uma sombra para dar profundidade */
+}
