@@ -10,30 +10,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div>
+        <img src="img/background.png" alt=" Background" class="background-image">
 
-    <div class="container">
-        <h1>Bin2Dec: Conversor Binário para Decimal</h1>
-        <p>Bem-vindo ao Bin2Dec! Esta ferramenta permite converter números binários (base 2) em números decimais (base 10). Insira um número binário no campo abaixo e clique em "Converter" para ver o resultado.</p>
-        <div class="instructions">
-            <h2>Instruções:</h2>
-            <ul>
-                <li>Digite um número binário válido (composto apenas por 0s e 1s).</li>
-                <li>Clique no botão "Converter".</li>
-                <li>O resultado em decimal será exibido abaixo do formulário.</li>
-            </ul>
+        <div class="container">
+            <h1>Bin2Dec: Conversor Binário para Decimal</h1>
+            <p>Bem-vindo ao Bin2Dec! Esta ferramenta permite converter números binários (base 2) em números decimais (base 10). Insira um número binário no campo abaixo e clique em "Converter" para ver o resultado.</p>
+            <div class="instructions">
+                <h2>Instruções:</h2>
+                <ul>
+                    <li>Digite um número binário válido (composto apenas por 0s e 1s).</li>
+                    <li>Clique no botão "Converter".</li>
+                    <li>O resultado em decimal será exibido abaixo do formulário.</li>
+                </ul>
+            </div>
+
+            <div class="converter">
+                <label for="binaryInput">Número Binário:</label>
+                <input type="text" id="binaryInput" maxlength="8" placeholder="Ex: 10110010">
+                
+                <p id="errorMessage" class="error"></p>
+
+                <h2>Resultado Decimal:</h2>
+                <p id="decimalOutput" class="result">0</p>
+            </div>
+            <button id="convertButton">Converter</button>
         </div>
-
-        <div class="converter">
-            <label for="binaryInput">Número Binário:</label>
-            <input type="text" id="binaryInput" maxlength="8" placeholder="Ex: 10110010">
-            
-            <p id="errorMessage" class="error"></p>
-
-            <h2>Resultado Decimal:</h2>
-            <p id="decimalOutput" class="result">0</p>
-        </div>
-        <button id="convertButton">Converter</button>
     </div>
+   
     <script src="script.js"></script>
     
 </body>
