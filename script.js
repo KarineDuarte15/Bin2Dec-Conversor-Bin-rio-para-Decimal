@@ -27,6 +27,26 @@ binaryInput.addEventListener('input', () => {
             return; // Para a execução se encontrar um caractere inválido
         }
     }
-    
+
+    // 4. Lógica de Conversão (o coração do programa)
+    let decimalValue = 0;
+    let power = 0;
+
+    // Itera sobre a string binária da DIREITA para a ESQUERDA
+    for (let i = binaryString.length - 1; i >= 0; i--) {
+        const digit = parseInt(binaryString[i]);
+
+        // Se o dígito for 1, adiciona o valor da potência de 2 correspondente
+        if (digit === 1) {
+            // AQUI USAMOS A FUNÇÃO MATEMÁTICA REQUERIDA: Math.pow()
+            decimalValue += Math.pow(2, power);
+        }
+
+        // Incrementa a potência para a próxima posição (da direita para a esquerda)
+        power++;
+    }
+
+    // 5. Exibe o resultado final na tela
+    decimalOutput.textContent = decimalValue;
    
 });
